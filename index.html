@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-left">
+      <h1>Красивый и простой сайт — готово на Flask</h1>
+      <p class="lead">Быстрая демонстрация статичного макета из Figma: навигация, герой-секция, карточки фич и форма контакта.</p>
+      <div class="hero-ctas">
+        <a href="#features" class="button-primary">Узнать больше</a>
+        <a href="#contact" class="button-outline">Связаться</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="device-mock">
+        <!-- Здесь можно заменить картинкой из Figma -->
+        <svg width="260" height="160" viewBox="0 0 260 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="260" height="160" rx="12" fill="#0F1724"/>
+          <rect x="16" y="16" width="228" height="128" rx="8" fill="#0B1220"/>
+          <text x="50%" y="50%" fill="#9CA3AF" font-size="14" text-anchor="middle" dominant-baseline="middle">Place your image</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="features">
+  <div class="container">
+    <h2 class="section-title">Особенности</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Простота</h3>
+        <p>Минималистичный HTML/CSS и Flask для быстрой итерации.</p>
+      </div>
+      <div class="card">
+        <h3>Адаптивность</h3>
+        <p>Макет автоматически подстраивается под мобильные экраны.</p>
+      </div>
+      <div class="card">
+        <h3>Лёгкость правок</h3>
+        <p>Измените тексты и стили — сайт обновится мгновенно.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">О проекте</h2>
+    <p>Этот шаблон — стартовая точка для перевода макета из Figma в работающий сайт на Python/Flask. Лёгкий, понятный код и чистые стили.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-inner">
+    <div class="contact-form">
+      <h2>Связаться</h2>
+      <form method="post">
+        <label>Имя
+          <input type="text" name="name" placeholder="Ваше имя">
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="you@example.com">
+        </label>
+        <label>Сообщение
+          <textarea name="message" rows="5" placeholder="Короткое сообщение"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="button-primary">Отправить</button>
+          <button type="reset" class="button-outline">Очистить</button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Контактная информация</h3>
+      <p>Почта: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p>Телефон: +7 (000) 000-00-00</p>
+      <p>Можно также заменить этот блок картинкой/скриншотом из Figma.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
